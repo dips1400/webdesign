@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@0;1&family=Revalia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wdth,wght@0,87.4,600;1,87.4,600&family=Revalia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Noto+Sans:ital,wdth,wght@0,87.4,600;1,87.4,600&family=Revalia&display=swap');
+
+.container{
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    height: auto;
+    width: inherit;
+    position: absolute;
+    flex-direction: column;
+
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        color: #fff;
+        text-decoration: none;
+        font-size: 68px;
+        font-family: "Revalia", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+
+        .lines-container{
+            height: 145px;
+            width: 145px;
+            padding: 0;
+            margin: 0;
+
+            .line {
+                background-color: #6A45FF;
+                position: absolute;
+                transform-origin: top center;
+                width: 5px;
+                margin-top: 2rem;
+                height: 40px;
+                left: 70px;
+              }
+        }
+    }
+
+    .middle-content{
+        display: flex;
+        justify-content: center;
+        width: inherit;
+        flex-direction: column;
+
+
+        .banner{
+            height: 35px;
+            background-color: #6A45FF;
+            width: inherit;
+            text-align: center;
+            font-family: "Noto Sans Mono", monospace;
+            font-weight: 600;
+            font-size: 28px;
+            margin: 0px;
+            padding: 0.5rem;
+            color: #fff;
+        }
+
+        .info{
+            // text-align: center;
+            display: flex;
+            color: #fff;
+            justify-content: center;
+            position: relative;
+            font-family: "Noto Sans Mono", monospace;
+            font-size: 23px;
+
+            p{
+                width: 1100px;
+                text-align: center;
+            }
+        }
+    }
+
+    .lower-content{
+        display: flex;
+        justify-content: center;
+        font-family: "Noto Sans Mono", monospace;
+        font-size: 20px;
+        color: #fff;
+        flex-direction: column;
+        height: auto;
+
+        .scroll{
+            display: flex;
+            justify-content: center;
+        }
+
+        .scrollline{
+            display: flex;
+            margin-top: 3rem;
+
+        }
+
+        hr{
+            width: 100px;
+            top: 5rem;
+            transform: rotate(90deg);
+        }
+    }
+
+
+
+
+}

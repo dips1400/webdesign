@@ -1,0 +1,346 @@
+.main-content {
+  height: 2101px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  top: 5rem;
+
+  .hrline {
+    width: 1700px;
+    position: relative;
+    background-color: #6a45ff;
+    height: 40px;
+    margin-left: 90px;
+    transform: rotate(90deg);
+    height: 250px;
+    z-index: 1;
+    margin-top: 9.3rem;
+
+    .title {
+      height: 245px;
+      width: 300px;
+      color: #fff;
+    }
+
+    h1 {
+      transform: rotate(-90deg);
+      position: relative;
+      margin-left: 2rem;
+      letter-spacing: 0.2cm;
+    }
+
+    h3 {
+      transform: rotate(-90deg);
+      position: relative;
+      margin-left: 11rem;
+      font-weight: 400;
+      letter-spacing: 0.1cm;
+    }
+  }
+
+  .picture-content {
+    height: 500px;
+    position: relative;
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+    margin-top: -500px;
+  }
+
+  .box1 {
+    width: 640px;
+    height: inherit;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../images/7746a488a1416d22e0b8b405b3300bf2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    align-items: center;
+
+    h1 {
+      letter-spacing: 0.2cm;
+      width: 290px;
+      font-weight: 500;
+    }
+
+    h5 {
+      font-size: larger;
+      width: 400px;
+      font-weight: 100;
+    }
+  }
+
+  .box2 {
+    width: 640px;
+    height: inherit;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
+      url("../images/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    align-items: center;
+
+    h1 {
+      letter-spacing: 0.2cm;
+      width: 290px;
+      font-weight: 500;
+    }
+
+    h5 {
+      font-size: larger;
+      width: 400px;
+      font-weight: 100;
+    }
+  }
+
+  .box3 {
+    width: 640px;
+    height: inherit;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
+      url("../images/emile-perron-xrVDYZRGdw4-unsplash.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    align-items: center;
+
+    h1 {
+      letter-spacing: 0.2cm;
+      width: 290px;
+      font-weight: 500;
+    }
+
+    h5 {
+      font-size: larger;
+      width: 400px;
+      font-weight: 100;
+    }
+  }
+
+  .lower-content {
+    bottom: 0;
+    position: relative;
+    width: inherit;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    top: 11rem;
+    background-color: #dce1e6;
+
+    .left {
+      z-index: 2;
+      width: 50%;
+    }
+
+    .right {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .rightContent {
+        width: 400px;
+        position: relative;
+        margin-left: -3rem;
+
+        h1 {
+          font-weight: 500;
+          letter-spacing: 0.15cm;
+        }
+
+        hr {
+          margin-top: -1rem;
+          margin-left: 0;
+        }
+
+        p {
+          font-weight: 400;
+        }
+
+        h2 {
+          font-weight: 500;
+          letter-spacing: 0.1cm;
+        }
+
+        .lower {
+          display: flex;
+          flex-direction: row;
+          grid-gap: 1rem;
+          align-items: center;
+        }
+
+        .circle {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: 2px solid #6a45ff;
+          padding: 0.2rem;
+        }
+      }
+    }
+  }
+
+  .lowercontainter2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 580px;
+    z-index: 99;
+    bottom: -11rem;
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .square-logo {
+    position: relative;
+    height: 130px;
+    width: 130px;
+    overflow: hidden;
+    transition: all 1s;
+    animation: logoAnimation 5s infinite alternate ease-in-out
+  }
+  .square-top,
+  .square-left,
+  .square-right,
+  .square-bottom {
+    position: absolute;
+    height: calc(100% / 1.414);
+    width: calc(100% / 1.414);
+    top: 50%;
+    left: 50%;
+    transform-origin: 0% 0%;
+  }
+  .square-right {
+    transform: rotate(-45deg);
+    background-color: rgb(248, 248, 153);
+  }
+  .square-bottom {
+    transform: rotate(45deg);
+    background-color: rgb(238, 86, 86);
+  }
+  .square-top {
+    transform: rotate(-135deg);
+    background-color: rgb(84, 242, 84);
+  }
+  .square-left {
+    transform: rotate(135deg);
+    background-color: #886df5;
+  }
+  @keyframes logoAnimation {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(180deg) scale(1.5); 
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+}
+
+/* On screens that are 600px wide or less */
+@media screen and (max-width: 600px) {
+  .main-content .picture-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12rem;
+  }
+  .picture-content .box1, .picture-content .box2, .picture-content .box3 {
+    width: 80%; 
+    box-sizing: border-box;
+    margin-bottom: 20px; 
+  }
+
+  .main-content .hrline{
+    width: 2000px;
+    position: absolute;
+    height: 45px;
+    margin-left: -46.5rem;
+    margin-top: -6.2rem;
+    background-color: #aa98f5;
+  }
+
+  .main-content .hrline .title{
+    color: #6a45ff;
+    margin-top: -5.5rem;
+    
+  }
+
+  .main-content .hrline .title h1{
+    font-weight: 500;
+  }
+
+  .main-content .hrline .title h3{
+    color: #333;
+  }
+
+  .lower-content {
+    flex-direction: column; 
+    margin-top: 10rem;
+    
+    .right {
+      width: 100%; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .rightContent {
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+
+      h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem; 
+        position: absolute;
+        margin:-1rem -11rem;
+      }
+
+      .line  {
+        width: 80%; 
+        position: absolute;
+        margin-left: 4rem -7rem;
+      }
+
+      p {
+        font-size: 0.9rem; 
+        margin-top: 25rem; 
+      }
+
+      h2 {
+        font-size: 1.2rem; 
+      }
+    }
+
+    .left {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -5rem;
+      img {
+        margin-left: 6rem;
+        
+      }
+    }
+  }
+}
